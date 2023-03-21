@@ -14,24 +14,31 @@ body {
 }
 
 .headerContainer {
-    /* position: fixed; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1280px;
-    height: 69px;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    min-height: 69px;
     border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: center;
+    z-index: 30;
+    background-color: black;
+
+}
+
+.header {
+    width: 33%;
+    vertical-align: middle;
+}
+
+.navDiv {
+    width: 33%;
+    text-align: right;
+    padding: 23px;
 }
 
 .logo {
     height: 50px;
-    margin-left: 10px;
-}
-
-.navDiv {
-    margin-right: 15px;
-
+    padding: 10px;
 }
 
 .navDiv a {
@@ -39,66 +46,28 @@ body {
 }
 
 .bodyContainer {
-    width: 1280px;
+    position: relative;
+    width: 66%;
     margin: 0 auto;
+    top: 78px;
+    z-index: 0;
+    padding-left: 3.5%;
 }
 
 .background1 {
-    position: relative;
-    width: 1200px;
-    height: 700px;
-    left: 40px;
+    width: 93%;
+    height: 194%;
+    left: 3.5%
 }
 
 .missionBar {
     position: relative;
-    width: 1200px;
-    z-index: 5;
+    width: 93%;
+    z-index: 10;
+    min-height: 90px;
+    bottom: 400px;
+    text-align: center;
     background-color: black;
-    height: 100px;
-    margin: 0 auto;
-    text-align: center;
-    bottom: 450px;
-}
-
-.missionBar h2 {
-    padding-top: 10px;
-}
-
-.missionBar h4 {
-    padding-bottom: 10px;
-
-}
-
-.photoDiv1{
-    width: 1000px;
-    display: flex;
-    justify-content: space-evenly;
-    left: 140px;
-    margin:0 auto;
-    
-}
-
-.photoDiv2{
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    left: 140px;
-    margin:0 auto;
-}
-
-.photoDiv1 figure, .photoDiv2 figure{
-    display: flex;
-    flex-direction: column;
-}
-
-.photoDiv1 figure img,
-.photoDiv2 figure img{
-    height: 200px;
-    width: 300px;
-}
-
-.photoDiv1 figure figcaption,
-.photoDiv2 figure figcaption{
-    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
